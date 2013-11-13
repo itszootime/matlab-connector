@@ -4,7 +4,7 @@ JSON is used as a platform and language independent.
 
 ## Server setup
 
-`java -jar matlab-connector-1.0-SNAPSHOT-with-dependencies.jar <port> <threads> <path>`
+`java -jar matlab-connector-1.1-SNAPSHOT-with-dependencies.jar <port> <threads> <path>`
 
 ## Using the Java client
 
@@ -31,7 +31,7 @@ The dependency for the connector can then be added.
   <dependency>
     <groupId>org.uncertweb</groupId>
     <artifactId>matlab-connector</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.1-SNAPSHOT</version>
   </dependency>
 </dependencies>
 ```
