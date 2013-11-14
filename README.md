@@ -4,7 +4,7 @@ JSON is used as a platform and language independent.
 
 ## Server setup
 
-`java -jar matlab-connector-1.0-SNAPSHOT-with-dependencies.jar <port> <threads> <path>`
+`java -jar matlab-connector-1.1-SNAPSHOT-with-dependencies.jar <port> <threads> <path>`
 
 ## Using the Java client
 
@@ -31,7 +31,7 @@ The dependency for the connector can then be added.
   <dependency>
     <groupId>org.uncertweb</groupId>
     <artifactId>matlab-connector</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.1-SNAPSHOT</version>
   </dependency>
 </dependencies>
 ```
@@ -58,10 +58,10 @@ System.out.println(result.toString());
 
 ## Build
 
-If you wish to build the project from source, the [matlabcontrol 4.0.0](http://code.google.com/p/matlabcontrol/) library is required. As this is currently unavailable on most Maven repositories, you can instead [manually download the JAR file](http://code.google.com/p/matlabcontrol/downloads/detail?name=matlabcontrol-4.0.0.jar&can=1&q=) and install locally:
+If you wish to build the project from source, the [matlabcontrol 4.1.0](http://code.google.com/p/matlabcontrol/) library is required. As this is currently unavailable on most Maven repositories, you can instead [manually download the JAR file](http://code.google.com/p/matlabcontrol/downloads/detail?name=matlabcontrol-4.1.0.jar&can=1&q=) and install locally:
 
 ```console
-$ mvn install:install-file -Dfile=matlabcontrol-4.0.0.jar -DgroupId=matlabcontrol -DartifactId=matlabcontrol -Dversion=4.0.0 -Dpackaging=jar
+$ mvn install:install-file -Dfile=matlabcontrol-4.1.0.jar -DgroupId=matlabcontrol -DartifactId=matlabcontrol -Dversion=4.1.0 -Dpackaging=jar
 ```
 
 Then build:

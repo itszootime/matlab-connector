@@ -7,6 +7,7 @@ import matlabcontrol.MatlabConnectionException;
 import matlabcontrol.MatlabInvocationException;
 import matlabcontrol.MatlabProxy;
 import matlabcontrol.MatlabProxyFactory;
+import matlabcontrol.MatlabProxyFactoryOptions;
 import matlabcontrol.extensions.MatlabNumericArray;
 import matlabcontrol.extensions.MatlabTypeConverter;
 
@@ -38,7 +39,10 @@ public class MLInstance {
 	}
 
 	public MLInstance(String baseDir) throws MLConnectorException {
-		MatlabProxyFactory factory = new MatlabProxyFactory();
+		MatlabProxyFactoryOptions options = new MatlabProxyFactoryOptions.Builder()
+                                                .setHidden(true)
+                                                .build();
+		MatlabProxyFactory factory = new MatlabProxyFactory(options);
 		try {
 			proxy = factory.getProxy();
 			processor = new MatlabTypeConverter(proxy);
